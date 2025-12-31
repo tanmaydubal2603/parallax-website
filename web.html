@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My website</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+ <style> 
+		/* Parallax Effect */
+        .parallax {
+            background-image: url('image.jpg');
+            background-attachment: fixed;
+             /* Parallax effect */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh; /* Full viewport height */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Content sections */
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Smooth Scroll */
+        html, body {
+            scroll-behavior: smooth;
+        }
+
+        /* Optional: Style for the navigation */
+        .navbar {
+            margin-bottom: 0;
+        }
+
+        .navbar-nav li a {
+            color: #fff !important;
+        }
+
+        /* Icon Section */
+        .icon-box {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .icon-box i {
+            font-size: 3em;
+            color: #5bc0de;
+        }
+
+        .icon-box h3 {
+            font-size: 1.5em;
+            margin-top: 15px;
+        }</style> 
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Nature Lover</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#section1">Home</a></li>
+     
+          <li class="active"><a href="#section2">About us</a></li>
+          <li class="active"><a href="#section3"> More place</a></li>
+          <li class="active"><a href="#section4"> contact us</a></li>
+        </ul>
+      
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="form.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="signup.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="section1" class="parallax">
+	<div>
+		<h1 style="font-family:verdana;">Welcome to meet Nature</h1>
+		<p style="font-family:verdana;"> Come to know how beautiful Nature is!</p>
+	</div></div>
+	
+
+<div id="section2" class="section">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="icon-box">
+                <i class="fas fa-cogs"></i>
+                <h3>Custom Plans</h3>
+                <p>We provide custom plans tailored to your needs.</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-users"></i>
+                <h3>Dedicated Team</h3>
+                <p>Our team is committed to bringing your vision to life.</p>
+            </div>
+            <div class="icon-box">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud-Based</h3>
+                <p>We leverage cloud technology to enhance your business operations.</p>
+            </div>
+            
+
+
+        
+        </div>
+    </div> 
+    <div id="section3" class="parallax">
+    <div class="container text-center">
+        <h1>Our Portfolio</h1>
+        <p>Showcase some of the work you've done or projects completed.</p>
+        <div class="row">
+            <!-- Portfolio Image 1 -->
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="12.jpg" alt="Project 1" class="img-thumbnail">
+                    <div class="overlay">
+                        <p>Project 1 Description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Image 2 -->
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="12.jpg" alt="Project 2" class="img-thumbnail">
+                    <div class="overlay">
+                        <p>Project 2 Description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio Image 3 -->
+            <div class="col-md-4">
+                <div class="portfolio-item">
+                    <img src="12.jpg" alt="Project 3" class="img-thumbnail">
+                    <div class="overlay">
+                        <p>Project 3 Description</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<div id="section4" class="parallax">
+	<div class="container">
+		<div style="background-image:image.jpg"><form action="post" method="get">
+		<label style="font-size: 20px;" for='1stname'>First Name:</label>
+		<input type="text"
+		id="1stname" name="1stname"
+		placeholder="Enter your first name"
+		class="form-control"> <br>
+		<label style="font-size:20px;"  for='lastname'>Last Name:</label>
+		<input type="text" id='lastname' name='lastname'
+		placeholder="Enter your surname" class='form-control'>
+		<br>
+        <label style="font-size:20px;"  for='phone no'>Phone Number:</label>
+        <input type="text"
+        id="Phone no" name="Phone number"
+        placeholder="Enter your phone number"
+        class="form-control"> <br>
+
+		<button class="btn btn-info" type="submit"> submit</button>
+		<br>
+		<textarea class="form-control"style="width:550px;" 'align-content: center;'
+		"height:300px;">
+			Write your opinions!
+		</textarea> </form></div></div></div>
+
+
+
+</body>
+</html>
